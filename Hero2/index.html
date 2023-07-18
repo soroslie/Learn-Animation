@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        position: relative;
+        height: 50vh;
+        width: 100%;
+      }
+      .model-container {
+        position: absolute;
+        top: 0rem;
+        left: 0;
+        width: 100%;
+        height: 60vh;
+        background-color: black;
+      }
+      .model {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 100;
+      }
+      .model-name {
+        font-size: 60px;
+        position: absolute;
+        z-index: 500;
+        left: 20%;
+        bottom: 5%;
+        color: white;
+      }
+      .circle {
+        color: white;
+        padding: 0.5rem;
+        border-radius: 100%;
+        position: absolute;
+        z-index: 500;
+        color: white;
+        padding: 5px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .words1 {
+        transform: rotate(-10deg);
+        height: 150px;
+        width: 150px;
+        left: 20%;
+        top: 5%;
+        background-color: blue;
+      }
+
+      .words2 {
+        transform: rotate(10deg);
+        width: 200px;
+        height: 200px;
+        right: 10%;
+        bottom: 5%;
+        background-color: orange;
+        font-size: 40px;
+      }
+
+      .word-container {
+        text-align: left;
+        position: absolute;
+        top: 10%;
+        right: 5%;
+        color: grey;
+        max-width: 20vh;
+        z-index: 500;
+      }
+      .heading {
+        color: white;
+      }
+      .bacot {
+        color: grey;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="model-container">
+        <img class="model" src="/Hero2/image.png" alt="" />
+        <p class="model-name">
+          Leandro <br />
+          Thiery ->
+        </p>
+        <div class="circle words1">Developer</div>
+        <div class="circle words2">Experience <br />QA</div>
+        <div class="word-container">
+          <p>/this is me</p>
+          <h2 class="heading">
+            Experience QA <br />
+            and developer <br />
+            from Indonesia
+          </h2>
+          <p class="bacot">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+            aspernatur totam et odio esse facere distinctio qui, temporibus
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
